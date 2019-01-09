@@ -101,11 +101,12 @@ def over?(board)
     return false
   end
 end
+
+
 def winner(board)
-  if won?(board)
-  combination = won?(board)
-  winning_location = combination[0]
-  board[winning_location]
+  if combination = won?(board)
+  winning_location = board[combination.first]
+  return winning_location
 else
   nil
 end
