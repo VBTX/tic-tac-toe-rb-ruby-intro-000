@@ -39,7 +39,7 @@ end
   puts "Please enter 1-9:"
   input = gets.strip
   if valid_move?(board, input)
-    move(board, input, current_player(board))
+    move(board, input, current_player)
   else
     turn(board)
   end
