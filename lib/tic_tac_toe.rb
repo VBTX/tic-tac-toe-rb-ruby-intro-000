@@ -75,10 +75,15 @@ return combination
 
 
 def full?(board)
-  board.all? do |el|
-  el == "X" || el == "O"
+  if board.all? do |el|
+     el == "X" || el == "O"
+     return true
+   else
+     return false
 end
 end
+
+
 def draw?(board)
   full?(board) && !won?(board)
 end
