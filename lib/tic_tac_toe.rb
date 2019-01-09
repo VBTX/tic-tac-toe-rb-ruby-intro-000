@@ -31,13 +31,9 @@ end
   board[location] != " " && board[location] != ""
 end
 
-# def valid_move?(board, position)
-#   position.to_i.between?(1,9) && !position_taken?(board, position.to_i-1)
-# end
-
-def valid_move?(input)
-   input.to_i.between?(1,9) && !position_taken?(input.to_i-1)
- end
+def valid_move?(board, position)
+  position.to_i.between?(1,9) && !position_taken?(board, position.to_i-1)
+end
 
 
  def turn(board)
