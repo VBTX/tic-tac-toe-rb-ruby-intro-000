@@ -69,8 +69,11 @@ def won?(board)
     win_index_3 = combination[2]
 
     board[win_index_1] == board[win_index_2] && board[win_index_2] == board[win_index_3] && board[win_index_1] != " "
+return combination
         end
       end
+
+      
 def full?(board)
   board.all? do |el|
   el == "X" || el == "O"
