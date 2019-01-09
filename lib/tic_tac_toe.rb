@@ -33,12 +33,9 @@ end
 
 
 def valid_move?(board, position)
-  index = position.to_i - 1
-  if index.between?(1,9) && position_taken?(board, position.to_i-1) == false
-    true
-  else
-    false
-  end
+  pos = position.to_i - 1
+  return false if pos == -1 || board[pos].nil? || position_taken?(board, pos)
+  true
 end
 
  def turn(board)
