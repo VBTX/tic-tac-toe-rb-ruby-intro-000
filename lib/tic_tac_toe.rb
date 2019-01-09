@@ -75,8 +75,8 @@ return combination
 
 
 def full?(board)
-  if board.all? do |el|
-     el == "X" || el == "O"
+  board.all? do |el|
+     if el == "X" || el == "O"
      return true
    else
      return false
