@@ -73,7 +73,7 @@ return combination
         end
       end
 
-      
+
 def full?(board)
   board.all? do |el|
   el == "X" || el == "O"
