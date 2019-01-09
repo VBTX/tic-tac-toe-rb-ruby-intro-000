@@ -41,7 +41,7 @@ end
   puts "Please enter 1-9:"
   position = gets.strip
   if valid_move?(board, position)
-    move(board, position, current_player(board))
+    move(board, index, current_player(board))
   else
     turn(board)
   end
