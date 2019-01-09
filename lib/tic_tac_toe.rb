@@ -51,7 +51,7 @@ def move(board, index, current_player)
      count += 1
    end
  end
- count
+ return count
  end
 
  def current_player(board) # it was in the instructions that even = X
