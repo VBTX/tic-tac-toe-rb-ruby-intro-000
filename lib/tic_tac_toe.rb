@@ -116,7 +116,6 @@ end
     turn(board)
   end
   if won?(board)
-    winner(board) == "X" || winner(board) == "O"
     puts "Congratulations #{winner(board)}!"
   else
     puts "Cat's Game!"
