@@ -32,11 +32,6 @@ end
 end
 
 
-def valid_move?(board, position)
-  pos = position.to_i - 1
-  return false if pos == -1 || board[pos].nil? || position_taken?(board, pos)
-  true
-end
 
  def turn(board)
   puts "Please enter 1-9:"
