@@ -32,8 +32,7 @@ end
 end
 
 def valid_move?(board, position)
-  integer = position.to_i
-  integer.between?(1,9) && !position_taken?(board, integer)
+  position.to_i.between?(1,9) && !position_taken?(board, position.to_i)
 end
 
 
