@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
- def move(board, location, current_player = "X")
+ def move(board, location, current_player)
   board[location.to_i-1] = current_player
 end
 
