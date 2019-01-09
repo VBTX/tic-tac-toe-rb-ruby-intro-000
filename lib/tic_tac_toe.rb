@@ -85,9 +85,9 @@ end
 
  def full?(board)
   if board.detect {|i| i == " " || i == nil}
-    return false
+    false
   else
-    return true
+    true
   end
 end
 
