@@ -95,7 +95,11 @@ end
 
 
 def over?(board)
-  won?(board) || full?(board)
+  if won?(board) || full?(board)
+    return true
+  else
+    return false
+  end
 end
 def winner(board)
   if won?(board)
