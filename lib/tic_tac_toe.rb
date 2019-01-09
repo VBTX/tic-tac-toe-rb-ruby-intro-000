@@ -20,11 +20,10 @@ end
 def input_to_index(user_input)
   index = user_input.to_i - 1
   return index
-
 end
 
  def move(board, index, current_player)
-  board[index.to_i-1] = current_player
+  board[index.to_i] = current_player
 end
 
  def position_taken?(board, location)
